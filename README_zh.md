@@ -31,7 +31,7 @@ repocket 是一个允许用户通过分享流量来赚钱的平台。(被动收�
 curl -L https://raw.githubusercontent.com/spiritLHLS/repocket-one-click-command-installation/main/repocket.sh -o repocket.sh && chmod +x repocket.sh && bash repocket.sh
 ```
 
-注册链接注册后，复制左上角的token，运行此命令，粘贴token，回车，即可开始安装。
+注册链接注册后，记住邮箱和密码，运行这个脚本，粘贴邮箱和密码，回车开始安装。
 
 ### 一键安装
 
@@ -39,7 +39,7 @@ curl -L https://raw.githubusercontent.com/spiritLHLS/repocket-one-click-command-
 curl -L https://raw.githubusercontent.com/spiritLHLS/repocket-one-click-command-installation/main/repocket.sh -o repocket.sh && chmod +x repocket.sh && bash repocket.sh -m youremail -p yourpassword
 ```
 
-在此命令的最后更改为你的token
+在此命令的中更改为你的账号邮箱和密码即可
 
 ## 卸载
 
