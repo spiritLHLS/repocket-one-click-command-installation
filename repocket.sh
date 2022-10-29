@@ -99,10 +99,11 @@ uninstall(){
 }
 
 # 传参
-while getopts "UuT:t:" OPTNAME; do
+while getopts "UuM:m:P:p:" OPTNAME; do
   case "$OPTNAME" in
     'U'|'u' ) uninstall;;
-    'T'|'t' ) TMTOKEN=$OPTARG;;
+    'M'|'m' ) EMAIL=$OPTARG;;
+    'P'|'p' ) PASSWORD=$OPTARG;;
   esac
 done
 
