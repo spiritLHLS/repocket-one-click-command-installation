@@ -56,7 +56,7 @@ uninstall service
 
 ## Experience
 
-The IP type is home bandwidth and the income in Europe and the United States is relatively high, but it is still not very high. Currently, no more than 100M by 1 devices can be shared per day.
+The IP type is home bandwidth and the income in Europe and the United States is relatively high, but it is still not very high. Currently, the sharing per day does not exceed 100M per 1 device.
 
 ## Disclaimer
 
