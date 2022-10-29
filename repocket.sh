@@ -75,11 +75,11 @@ container_build(){
   fi
 
   # 删除旧容器（如有）
-  docker ps -a | awk '{print $NF}' | grep -qw "$NAME" && yellow " Remove the old traffmonetizer container.\n " && docker rm -f "$NAME" >/dev/null 2>&1
+  docker ps -a | awk '{print $NF}' | grep -qw "$NAME" && yellow " Remove the old repocket container.\n " && docker rm -f "$NAME" >/dev/null 2>&1
 
   # 创建容器
   yellow " Create the traffmonetizer container.\n "
-  docker run -e --name $NAME RP_EMAIL="$EMAIL" -e RP_PASSWORD="$PASSWORD" -d --restart=always repocket/repocket >/dev/null 2>&1
+  docker run -e RP_EMAIL="$EMAIL" -e RP_PASSWORD="$PASSWORD" -d --restart=always repocket/repocket >/dev/null 2>&1
 
   # 创建 Towerwatch
   [[ ! $(docker ps -a) =~ watchtower ]] && yellow " Create TowerWatch.\n " && docker run -d --name watchtower --restart always -p 2095:8080 -v /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower --cleanup >/dev/null 2>&1
