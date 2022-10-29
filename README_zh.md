@@ -1,7 +1,8 @@
-# traffmonetizer-一键式命令安装
+# repocket-一键式命令安装
 
 ## 介绍
-traffmonetizer 是一个允许用户通过分享流量来赚钱的平台。(被动收入)
+
+repocket 是一个允许用户通过分享流量来赚钱的平台。(被动收入)
 
 您共享的 1G 流量将获得 0.10 美元，并且此脚本支持数据中心网络或家庭带宽。
 
@@ -19,15 +20,15 @@ traffmonetizer 是一个允许用户通过分享流量来赚钱的平台。(被�
 
 ### 信息
 
-- 本项目已经在 AMD64 和 ARM 上验证上测试通过
-- 感兴趣可以尝试一下，[注册链接点我](https://traffmonetizer.com/?aff=247346), 走我链接注册你获得5刀的注册奖励。
+- 本项目已经在 AMD64 上验证上测试通过，但官方不支持ARM架构暂时
+- 感兴趣可以尝试一下，[注册链接点我](https://link.repocket.co/PBaK), 走我链接注册你获得5刀的注册奖励。
 
 ## 安装
 
 ### 交互式安装
 
 ```shell
-curl -L https://raw.githubusercontent.com/spiritLHLS/traffmonetizer-one-click-command-installation/main/tm.sh -o tm.sh && chmod +x tm.sh && bash ./tm.sh
+curl -L https://raw.githubusercontent.com/spiritLHLS/repocket-one-click-command-installation/main/repocket.sh -o repocket.sh && chmod +x repocket.sh && bash repocket.sh
 ```
 
 注册链接注册后，复制左上角的token，运行此命令，粘贴token，回车，即可开始安装。
@@ -35,7 +36,7 @@ curl -L https://raw.githubusercontent.com/spiritLHLS/traffmonetizer-one-click-co
 ### 一键安装
 
 ```shell
-curl -L https://raw.githubusercontent.com/spiritLHLS/traffmonetizer-one-click-command-installation/main/tm.sh -o tm.sh && chmod +x tm.sh && bash ./tm.sh -t ViRrn6FZQsfgmE9pjmyAPsEM7UD6epqMb4zcJ3WtQYk=
+curl -L https://raw.githubusercontent.com/spiritLHLS/repocket-one-click-command-installation/main/repocket.sh -o repocket.sh && chmod +x repocket.sh && bash repocket.sh -m youremail -p yourpassword
 ```
 
 在此命令的最后更改为你的token
@@ -43,22 +44,16 @@ curl -L https://raw.githubusercontent.com/spiritLHLS/traffmonetizer-one-click-co
 ## 卸载
 
 ```shell
-bash tm.sh -u
+bash repocket.sh -u
 ```
 
 卸载服务
 
 ### 经验
 
-单IP挂国外，欧洲区日入0.010~0.015美元，美区估计会多点，单IP每日0.013以上不超过0.016吧。
+IP类型为家庭带宽以及欧美地区收益比较高，但依然不是很高，目前1天分享不超过100M每1台设备。
 
-**僧多粥少，人越多，收益越低**
-
-![](https://raw.githubusercontent.com/spiritLHLS/traffmonetizer-one-click-command-installation/main/backup/a.png)
-
-![](https://raw.githubusercontent.com/spiritLHLS/traffmonetizer-one-click-command-installation/main/backup/b.png)
-
-2022.05 末尾就大幅度减少收益了，之前一天有0.025美元以上的。(本脚本在平台适配了linux的第15天创建)
+本脚本在平台适配了linux的第2天创建.
 
 ### 免责声明
 
