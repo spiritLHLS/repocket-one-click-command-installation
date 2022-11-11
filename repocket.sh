@@ -48,8 +48,8 @@ check_ipv4(){
 check_virt(){
   ARCHITECTURE=$(uname -m)
   case "$ARCHITECTURE" in
-    aarch64 ) red " ERROR: Unsupported architecture: $ARCHITECTURE\n" && exit 1;;
-    x64|x86_64|amd64 ) ARCH=latest;;
+    aarch64 ) ARCH=arm64;;
+    x64|x86_64|amd64 ) ARCH=amd64;;
     * ) red " ERROR: Unsupported architecture: $ARCHITECTURE\n" && exit 1;;
   esac
 }
