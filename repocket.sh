@@ -80,7 +80,7 @@ container_build(){
 
   # 创建容器
   yellow " Create the repocket container.\n "
-  docker run -e RP_EMAIL="$EMAIL" -e RP_PASSWORD="$PASSWORD" -d --name "$NAME" --restart=always repocket/repocket 
+  docker run -e RP_EMAIL="$EMAIL" -e RP_PASSWORD="$PASSWORD" -d --name "$NAME" --restart=always repocket/repocket:"$ARCH" 
 
   # 创建 Towerwatch
   [[ ! $(docker ps -a) =~ watchtower ]] && yellow " Create TowerWatch.\n " && docker run -d --name watchtower --restart always -p 2095:8080 -v /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower --cleanup >/dev/null 2>&1
@@ -94,7 +94,7 @@ result(){
 # 卸载
 uninstall(){
   docker rm -f $(docker ps -a | grep -w "$NAME" | awk '{print $1}')
-  docker rmi -f $(docker images | grep repocket/repocket | awk '{print $3}')
+  docker rmi -f $(docker images | grep repocket/repocket:"$ARCH" | awk '{print $3}')
   green "\n Uninstall containers and images complete.\n"
   exit 0
 }
