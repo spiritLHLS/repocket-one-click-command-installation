@@ -24,7 +24,7 @@ It has below features:
 
 ## Notes
 
-- Verified on AMD64 but not in ARM
+- Verified on AMD64 and ARM64
 - Try it if you are interested via my --> [referrals](https://link.repocket.co/PBaK) <--, you will get 5 dollar.
 
 ## Install
