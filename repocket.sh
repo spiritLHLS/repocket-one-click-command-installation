@@ -81,7 +81,7 @@ container_build(){
 
   # 创建容器
   yellow " Create the repocket container.\n "
-  docker run -e RP_EMAIL="$EMAIL" -e RP_PASSWORD="$PASSWORD" -d --name "$NAME" --restart=always repocket/repocket:"$ARCH" 
+  docker run -e RP_EMAIL="$EMAIL" -e RP_PASSWORD="$PASSWORD" -d --name "$NAME" --restart=always repocket/repocket:latest
 
   # 创建 Towerwatch
   [[ ! $(docker ps -a) =~ watchtower ]] && yellow " Create TowerWatch.\n " && docker run -d --name watchtower --restart always -p 2095:8080 -v /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower --cleanup >/dev/null 2>&1
