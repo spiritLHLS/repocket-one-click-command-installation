@@ -95,7 +95,7 @@ result(){
 # 卸载
 uninstall(){
   docker rm -f $(docker ps -a | grep -w "$NAME" | awk '{print $1}')
-  docker rmi -f $(docker images | grep repocket/repocket:"$ARCH" | awk '{print $3}')
+  docker rmi -f $(docker images | grep repocket/repocket:latest | awk '{print $3}')
   green "\n Uninstall containers and images complete.\n"
   exit 0
 }
