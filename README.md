@@ -10,7 +10,7 @@ The repocket is an option that allows users to earn money by sharing your traffi
 
 You'll receive $0.10 for the 1G traffic you share, and this script supports data center network or home bandwidth.
 
-**This platform is suspected to be faulty, I have a server flagged with automatic advertising behavior, deploy with caution, never on a production machine! **
+**This platform is suspected to be faulty, I have a server flagged with automatic advertising behavior, deploy with caution, never on a production machine!**
 
 This is the **first one-click installation script of the whole network** to automatically install dependencies and pull and install the latest docker, and the script will continue to be improved according to the platform update.
 
