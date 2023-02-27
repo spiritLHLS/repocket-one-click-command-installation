@@ -37,15 +37,15 @@ It has below features:
 curl -L https://raw.githubusercontent.com/spiritLHLS/repocket-one-click-command-installation/main/repocket.sh -o repocket.sh && chmod +x repocket.sh && bash repocket.sh
 ```
 
-After the registration link is registered, remember the email and password, run this script, paste the email and password, and press Enter to start the installation.
+After the registration link is registered, remember the email and password, run this script, paste the email and Api Key, and press Enter to start the installation.
 
 ### One command installation
 
 ```shell
-curl -L https://raw.githubusercontent.com/spiritLHLS/repocket-one-click-command-installation/main/repocket.sh -o repocket.sh && chmod +x repocket.sh && bash repocket.sh -m youremail -p yourpassword
+curl -L https://raw.githubusercontent.com/spiritLHLS/repocket-one-click-command-installation/main/repocket.sh -o repocket.sh && chmod +x repocket.sh && bash repocket.sh -m youremail -p yourapikey
 ```
 
-Change to your email and password of this command
+Change to your email and Api Key of this command
 
 
 ## Uninstall
