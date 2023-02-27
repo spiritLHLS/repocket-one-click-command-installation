@@ -58,7 +58,7 @@ check_virt(){
 # 输入 repocket 的个人信息
 input_token(){
   [ -z $EMAIL ] && reading " Enter your Email, if you do not find it, open https://link.repocket.co/PBaK: " EMAIL 
-  [ -z $PASSWORD ] && reading " Enter your Password: " PASSWORD
+  [ -z $PASSWORD ] && reading " Enter your API KEY: " PASSWORD
 }
 
 container_build(){
@@ -81,7 +81,7 @@ container_build(){
 
   # 创建容器
   yellow " Create the repocket container.\n "
-  docker run -e RP_EMAIL="$EMAIL" -e RP_PASSWORD="$PASSWORD" -d --name "$NAME" --restart=always repocket/repocket:latest
+  docker run -e RP_EMAIL="$EMAIL" -e RP_API_KEY="$PASSWORD" -d --name "$NAME" --restart=always repocket/repocket:latest
 
   # 创建 Towerwatch
   [[ ! $(docker ps -a) =~ watchtower ]] && yellow " Create TowerWatch.\n " && docker run -d --name watchtower --restart always -p 2095:8080 -v /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower --cleanup >/dev/null 2>&1
